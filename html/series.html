@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflox - Séries</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="../img/favicon_netflox.png" />
+    <link rel="stylesheet" href="../css/main/main_style.css" />
+</head>
+<body>
+  <!--Page principale avec les différents films-->
+  <header id="Accueil">
+    <!--Header avec une navbar et une video (utilisation de js pour changer la couleur de la navbar au scroll )-->
+    <nav>
+      <!--Container pour avoir à gauche le logo et le menu-->
+      <div class="menu">
+        <img src="../img/logo.png" alt="" class="header_main_img_logo" />
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="#Séries">Séries</a></li>
+          <li><a href="movies.html">Films</a></li>
+          <li><a href="favoris.html">Ma liste</a></li>
+        </ul>
+      </div>
+      <!--Container pour pour pouvoit placer l'image à droite dans la navbar-->
+      <div class="profile">
+        <div class="search-container">
+          <input type="text" id="search" class="search" placeholder="Films, séries, acteurs">
+          <div id="searchResults"></div>
+        </div>
+        <button id="searchButton" class="searchButton">
+          <img src="../img/icons8-loupe.svg" alt="search" class="searchImg">
+        </button>
+        <img
+          src="../img/hero.png"
+          alt="profil"
+          class="header_profil_img"
+        />
+      </div>
+    </nav>
+    <!--Video qui tourne en boucle-->
+    <div id="header_background" class="header_background">
+      <img id="header_background_img" src="" alt="header_background" />
+    </div>
+  </header>
+
+  <main>
+    <!--Utilisation d'un container pour mettre les 3 catégories de films et utilisation de flexbox-->
+    <div class="series">
+      <!--Liens avec les films img vers une page html-->
+      <a href="#" id="comedySeriesLink">
+        <h2>Comédie</h2>
+      </a>
+      <ul id="seriesComedy"></ul>
+      <a href="#" id="animationSeriesLink">
+        <h2>Animation</h2>
+      </a>
+      <ul id="seriesAnimation"></ul>
+      <a href="#" id="adventureSeriesLink">
+        <h2>Aventure & Action</h2>
+      </a>
+      <ul id="seriesAdventure"></ul>
+      <a href="#" id="dramaSeriesLink">
+        <h2>Drame</h2>
+      </a>
+      <ul id="seriesDrama"></ul>
+      <a href="#" id="fantasySfSeriesLink">
+        <h2>Fantastique & Science-Fiction</h2>
+      </a>
+      <ul id="seriesFantasySf"></ul>
+      <a href="#" id="docSeriesLink">
+        <h2>Documentaire</h2>
+      </a>
+      <ul id="seriesDocumentary"></ul>
+      <a href="#" id="crimeSeriesLink">
+        <h2>Crime</h2>
+      </a>
+      <ul id="seriesCrime"></ul>
+      <a href="#" id="familySeriesLink">
+        <h2>Famille</h2>
+      </a>
+      <ul id="seriesFamily"></ul>
+      <a href="#" id="kidsSeriesLink">
+        <h2>Enfants</h2>
+      </a>
+      <ul id="seriesKids"></ul>
+      <a href="#" id="mysterySeriesLink">
+        <h2>Mystère</h2>
+      </a>
+      <ul id="seriesMystery"></ul>
+      <a href="#" id="realitySeriesLink">
+        <h2>Réalité</h2>
+      </a>
+      <ul id="seriesReality"></ul>
+      <a href="#" id="westernSeriesLink">
+        <h2>Western</h2>
+      </a>
+      <ul id="seriesWestern"></ul>
+      <a href="#" id="warSeriesLink">
+        <h2>Guerre & Politique</h2>
+      </a>
+      <ul id="seriesWar"></ul>
+    </div>
+  </main>
+  <footer><span>Netflox - Geoff Mnr - 2024</span></footer>
+</body>
+<!--lien vers script js pour le header-->
+<script src="../javascript/main_header.js"></script>
+<script src="../javascript/series.js"></script>
+</html>

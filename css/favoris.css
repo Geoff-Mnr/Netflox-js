@@ -1,0 +1,60 @@
+
+.favoritesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+h1 {
+  margin-left: 1.5em;
+}
+
+.favoritesContainer h3 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.favoritesContainer img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.favoritesContainer .remove-icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.favoritesContainer .remove-icon:hover {
+  transform: scale(1.5);
+}
+
+.favoritesContainer .favorite-item {
+  width: 30%;
+  height: 380px;
+  margin: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favorites_movies{
+  margin-top: 5em;
+  width:80%;
+}
+
+.favorites_series{
+  margin-top: 1em;
+  width:80%;
+}

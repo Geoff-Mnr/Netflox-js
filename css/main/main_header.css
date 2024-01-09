@@ -1,0 +1,172 @@
+
+/*Navbar qui est fixé transparante */
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 8vh;
+  position: fixed;
+  /*Transition*/
+  transition: 200ms ease-in-out background-color, 200ms ease-in-out box-shadow;
+  font-family: Montserrat, sans-serif;
+  /*Mettre la navbar transparante*/
+  background-color: rgba(14, 14, 14, 0.2);
+  /*Mettre la navbar au dessus de la video*/
+  z-index: 1;
+}
+
+nav .menu {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5em;
+}
+
+nav .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.header_main_img_logo {
+  width: 140px;
+  height: 45px;
+}
+
+.header_profil_img {
+  width: 45px;
+  height: 45px;
+  padding-right: 1.5em;
+}
+
+header video{
+  width: 100%;
+  position: relative;
+  /*Pour etre en dessous de la navbar*/
+  z-index: 0;
+}
+
+header .header_background{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+header img{
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+
+header ul {
+  display: flex;
+  margin-left: 2em;
+}
+
+header ul li {
+  list-style: none;
+}
+
+ header a {
+  /*Mise en place du menu dans la navbar*/
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.1rem;
+  text-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
+  transition: 200ms ease-in-out background-color, 200ms ease-in-out color;
+}
+
+.active_nav {
+  /*Quand la classe est active (au scroll) la nav bar change de couleur*/
+  background: linear-gradient(
+    0deg,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(14, 14, 14, 1) 95%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+}
+
+.active_nav ul li a:hover {
+  /*Mettre les liens en plus gras quand on passe au dessus après le scroll*/
+  color: #f3F3F3;
+  font-weight: 500;
+}
+
+
+.searchImg {
+  width: 2em;
+  height: 2em;
+  color: black;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block; /* Pour que le bouton reste à côté de l'input */
+}
+
+#searchResults {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  width: 100%;
+  top: calc(100% + 1px);
+  left: 0;
+}
+
+#searchResults li {
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+}
+
+#searchResults li:hover {
+  background-color: #f2f2f2;
+}
+
+#searchResults img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+#searchResults span {
+  font-weight: 600;
+  font-size: 10px;
+  color: #f1f1f1;
+}
+
+.search {
+  transition: ease-in-out 0.3s;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid #f3f3f3;
+  font-size: 1em;
+  border-radius: 2px;
+  color: #f3f3f3;
+  padding: .5em;
+  margin-right: 1em;
+}
+
+.searchButton {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-right: 2em;
+  cursor: pointer;
+}
+
+.searchImg {
+  width: 2.25em;
+  height: 2.25em;
+  color: black;
+}
+

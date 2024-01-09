@@ -1,0 +1,106 @@
+main {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .movies {
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 100%;
+  margin-top: 2em;
+}
+
+main .movies h2 {
+  margin-bottom: .25em;
+  margin-top: .25em;
+  padding-left: 1.25em;
+  font-size: 1.5em;
+}
+
+main .movies a{
+  text-decoration: none;
+  color: #f3f3f3;
+
+}
+
+main .movies h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+main .movies img {
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+
+main .movies ul {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  list-style: none; 
+  padding: 0;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+main .movies li {
+  flex: 0 0 calc(16.66% - 1em);
+  margin: 0.25em; 
+}
+
+
+/*Series*/
+
+main .series {
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 100%;
+  margin-top: 3em;
+}
+
+main .series h2 {
+  margin-bottom: .25em;
+  margin-top: .25em;
+  padding-left: 1.25em;
+  font-size: 1.5em;
+}
+
+main .series a{
+  text-decoration: none;
+  color: #f3f3f3;
+
+}
+
+main .series h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+main .series img {
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+
+main .series ul {
+  display: flex;
+  flex-wrap: wrap; /* Permettre le passage à la ligne des éléments */
+  justify-content: center; /* Centrer les éléments sur la ligne */
+  list-style: none; /* Supprimer les puces de la liste */
+  padding: 0;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+main .series li {
+  flex: 0 0 calc(16.66% - 1em); /* 100% / 7 éléments - espacement */
+  margin: 0.25em; /* Espacement entre les éléments */
+}

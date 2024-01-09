@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="../img/favicon_netflox.png" />
+    <link rel="stylesheet" href="../css/main/main_style.css" />
+    <title>Netflox - Série familliale</title>
+  </head>
+
+  <body>
+    <!--Page principale avec les différents films-->
+    <header id="Accueil">
+      <!--Header avec une navbar et une video (utilisation de js pour changer la couleur de la navbar au scroll )-->
+      <nav>
+        <!--Container pour avoir à gauche le logo et le menu-->
+        <div class="menu">
+          <img src="../img/logo.png" alt="" class="header_main_img_logo" />
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="series.html">Séries</a></li>
+            <li><a href="movies.html">Films</a></li>
+            <li><a href="favoris.html">Ma liste</a></li>
+          </ul>
+        </div>
+        <!--Container pour pour pouvoit placer l'image à droite dans la navbar-->
+        <div class="profile">
+          <img src="../img/hero.png" alt="profil" class="header_profil_img" />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--Utilisation d'un container pour mettre les 3 catégories de films et utilisation de flexbox-->
+      <div class="series">
+        <ul id="seriesAllFamily"></ul>
+      </div>
+    </main>
+    <footer><span>Netflox - Geoff Mnr - 2024</span></footer>
+  </body>
+  <!--lien vers script js pour le header-->
+  <script src="../javascript/main_header.js"></script>
+  <script src="../javascript/fetch_series.js"></script>
+</html>
