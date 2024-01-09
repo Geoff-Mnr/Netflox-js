@@ -24,8 +24,9 @@ function fetchMovies(url, containerId) {
 }
 
 function showMovies(movies, containerId) {
+    const container = document.getElementById(containerId);
     for (let i = 0; i < Math.min(40, movies.length); i++) {
-        const container = movies[i];
+        const movie = movies[i];
         const liElement = document.createElement('li');
         liElement.innerHTML = `
             <a href="movie_description.html?id=${movie.id}">
